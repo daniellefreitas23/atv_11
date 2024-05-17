@@ -2,13 +2,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 :root{
-    --main-backgroung: #0a0a0a;
+    --main-backgroung: #0c4a6e;
     --text-color: #f0f9ff;
+    --nav-backgroung: #0369a1;
 }
 body{
     background: var(--main-backgroung);
-    color: var(--text-color)
+    color: var(--text-color);
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 20px ;
+}
+
+nav {
+    background: var(--nav-backgroung);
+    padding: 3rem;
+    border-radius: 3rem;
+    width: fit-content;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+nav ul {
+    list-style: none;
 }
